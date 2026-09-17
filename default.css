@@ -1,0 +1,109 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: darkgreen;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    border-radius: 0 0 .75rem .75rem;
+}
+
+.header-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 0;
+    white-space: nowrap;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.header-logo img {
+  display: block;
+  width: 70px;
+}
+
+.tButton {
+    padding: 10px;
+    border: none;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.tButton:hover {
+    border-color: gray;
+}
+
+.button {
+    padding: 10px;
+    background-color: lime;
+    border-radius: .5rem;
+    transition: background 0.3s ease
+}
+
+.button:hover {
+    background-color: limegreen
+}
+
+#titleDiv {
+    display: inline-flex;
+    margin-right: 30%;
+    width: 300px;
+}
+
+.title-text {
+    font-size: 100px;
+    line-height: 100px;
+    padding: 0 0 0 20px;
+    overflow-wrap: break-word;
+    text-shadow: 1px 1px 5px black;
+}
+
+#changingText {
+    padding-left: 10px;
+    margin-left: 10px;
+    transition: all 0.8s ease;
+    color: limegreen;
+}
+
+#indicator {
+    animation: blink 1.5s infinite;
+}
+
+footer {
+    padding: 10px;
+}
+
+@keyframes blink {
+    0%, 20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
