@@ -25,6 +25,7 @@ div {
     backdrop-filter: blur(4px);
     border-radius: 2rem;
     border: 5px solid #008000;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
 }
 
 h1 {
