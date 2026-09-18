@@ -12,6 +12,7 @@ html, body {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header {
@@ -58,6 +59,15 @@ header {
     border-color: gray;
 }
 
+#githubButton {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#githubButton:hover {
+    opacity: 0.8;
+}
+
 .button {
     padding: 10px;
     background-color: lime;
@@ -86,7 +96,6 @@ header {
 #changingText {
     padding-left: 10px;
     margin-left: 10px;
-    transition: all 0.8s ease;
     color: limegreen;
 }
 
