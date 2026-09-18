@@ -103,6 +103,15 @@ header {
     animation: blink 1.5s infinite;
 }
 
+#floatingLogo {
+    width: 500px;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    animation: float 10s infinite;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
+}
+
 @keyframes blink {
     0%, 20% {
         opacity: 0;
@@ -112,6 +121,20 @@ header {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
