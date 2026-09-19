@@ -44,9 +44,16 @@ input {
 }
 
 #logInButton {
+    max-width: 300px;
     margin-top: 20px;
     background-color: #008000;
     color: white;
     font-weight: bold;
     font-size: medium;
+}
+
+#logInButton:hover {
+    cursor: pointer;
+    background-color: limegreen;
+    transition: background 0.2s ease;
 }
