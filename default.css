@@ -112,7 +112,8 @@ header {
     width: 500px;
     animation: float 10s infinite;
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
-    margin-top: -90px;
+    margin-top: 75px;
+    margin-left: 30px;
 }
 
 section {
@@ -158,6 +159,26 @@ footer {
     padding-left: 20px;
 }
 
+@media (max-width:1200px) {
+
+    #titleDiv {
+        display: unset;
+        width: 500px;
+        height: 450px;
+    }
+
+    .title-text {
+        font-size: 65px;
+        width: 448px;
+        margin-bottom: 0;
+    }
+
+    #floatingLogo {
+        width: 420px;
+        margin-top: 50px;
+    }
+
+}
 
 @keyframes blink {
     0%, 20% {
