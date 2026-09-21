@@ -31,6 +31,8 @@ async function changeText() {
             j--;
             await sleep(50);
         }
+
+        console.log(window.innerWidth);
     }
 }
 

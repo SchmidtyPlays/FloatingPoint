@@ -52,13 +52,14 @@ header {
 .tButton {
     padding: 10px;
     border: none;
-    border-radius: .5rem;
+    border-radius: 5rem;
     border: 2px solid transparent;
-    transition: border 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tButton:hover {
-    border-color: gray;
+    border-color: white;
+    background-color: limegreen;
 }
 
 #githubButton {
@@ -72,12 +73,14 @@ header {
 
 .button {
     padding: 10px;
-    background-color: lime;
-    border-radius: .5rem;
-    transition: background 0.3s ease
+    background-color: rgb(54, 222, 54);
+    border-radius: 5rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease
 }
 
 .button:hover {
+    border-color: white;
     background-color: limegreen
 }
 
@@ -92,7 +95,7 @@ header {
 .title-text {
     font-size: 100px;
     line-height: 100px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
     overflow-wrap: break-word;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     width: 680px;
@@ -102,6 +105,7 @@ header {
     padding-left: 10px;
     margin-left: 10px;
     color: limegreen;
+    white-space: nowrap;
 }
 
 #indicator {
@@ -159,22 +163,29 @@ footer {
     padding-left: 20px;
 }
 
-@media (max-width:1500px) {
+@media (max-width: 1200px) {
+
+    .header-logo img {
+        display: block;
+        max-width: 100px;
+    }
 
     #titleDiv {
         display: unset;
-        width: 500px;
+        width: 800px;
         height: 450px;
     }
 
     .title-text {
-        font-size: 65px;
-        width: 448px;
+        font-size: 14vw;
+        width: 95vw;
+        line-height: 14vw;
         margin-bottom: 0;
     }
 
     #floatingLogo {
-        width: 420px;
+        width: 85vw;
+        max-width: 500px;
         margin-top: 50px;
     }
 
