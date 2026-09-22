@@ -47,6 +47,7 @@ header {
 .header-logo img {
   display: block;
   width: 70px;
+  object-fit: contain
 }
 
 .tButton {
@@ -90,19 +91,20 @@ header {
     align-items: start;
     width: 500px;
     height: 450px;
+    align-items: start;
 }
 
 .title-text {
     font-size: 100px;
-    line-height: 100px;
     padding: 0 0 0 10px;
+    margin: 10px 0 0 0;
     overflow-wrap: break-word;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     width: 680px;
 }
 
 #changingText {
-    padding-left: 10px;
+    padding-left: 5px;
     margin-left: 10px;
     color: limegreen;
     white-space: nowrap;
@@ -116,7 +118,7 @@ header {
     width: 500px;
     animation: float 10s infinite;
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
-    margin-top: 75px;
+    margin-top: 50px;
     margin-left: 30px;
 }
 
@@ -165,9 +167,22 @@ footer {
 
 @media (max-width: 1200px) {
 
+    .header-links {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+        font-size: 14px;
+    }
+
+    .tButton {
+        padding: 8px;
+    }
+
+    .button {
+        padding: 8px;
+    }
+
     .header-logo img {
-        display: block;
-        max-width: 100px;
+        width: 60px;
     }
 
     #titleDiv {
@@ -177,7 +192,7 @@ footer {
     }
 
     .title-text {
-        font-size: 14vw;
+        font-size: 13vw;
         width: 95vw;
         line-height: 14vw;
         margin-bottom: 0;
