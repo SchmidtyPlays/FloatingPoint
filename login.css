@@ -43,6 +43,38 @@ input {
     white-space: nowrap;
 }
 
+button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 285px;
+    white-space: nowrap;
+}
+
+#githubLogo {
+    padding-right: 10px;
+}
+
+#logInGithub {
+    display: inline-flex;
+    max-width: 300px;
+    margin-top: 20px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    align-items: center;
+    justify-content: center;
+}
+
+#logInGithub:hover {
+    cursor: pointer;
+    background-color: rgb(70, 70, 70);
+    transition: background 0.2s ease;
+}
+
 #logInButton {
     max-width: 300px;
     margin-top: 20px;
