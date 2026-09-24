@@ -44,6 +44,7 @@ header img {
 h1 {
     font-size: x-large;
     text-align: center;
+    margin: 0;
 }
 
 input {
